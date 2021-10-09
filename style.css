@@ -1,0 +1,40 @@
+.tabl{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    
+    
+}
+
+.in{
+    margin: 20px;
+}
+
+.tabl .kl{
+    float: left;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    box-sizing:border-box;
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+}
+
+.tabl .kl div{
+    position: relative;
+    display: block;
+    top: 36%
+}
+
+span{
+    color: red;
+}
+
+.hide{
+    display: none;
+}
+
+button {
+    padding: 20px;
+}
