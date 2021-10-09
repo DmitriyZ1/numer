@@ -85,7 +85,17 @@ const fun = () => {
     document.querySelector('.tabl').classList.remove('hide');
     document.querySelector('.result').classList.remove('hide');
     for(let key in matrixTable){
-        document.querySelector(`#${key} span`).textContent =  matrixTable[key];
+        let datan = document.querySelector(`#${key}`).dataset.nn;
+        let out = '';
+        for(let i = 1; i <= matrixTable[key]; i++){
+            out += datan;
+        }
+        if(out === ''){
+            document.querySelector(`#${key} span`).textContent = '-';
+        } else {
+            document.querySelector(`#${key} span`).textContent = out;
+        }
+        console.log(datan)
         let newArr = [];
         switch(key){
             case "n1" :
