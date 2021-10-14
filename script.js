@@ -32,7 +32,7 @@ const fun = () => {
 
     let nn = String(threeCount)
     let fourCount = Number(nn[0]) +  Number(nn[1]);
-    console.log(fourCount)
+   
     
     const matrixTable = {
         n1: 0,
@@ -95,7 +95,7 @@ const fun = () => {
         } else {
             document.querySelector(`#${key} span`).textContent = out;
         }
-        console.log(datan)
+       
         let newArr = [];
         switch(key){
             case "n1" :
